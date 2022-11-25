@@ -78,46 +78,46 @@ html {
     }
 }
 
-.box1 {
+.box-1 {
     left: -25rem;
     top: -6rem;
     animation: boxAnim 100s infinite linear;
 }
 
-.box2 {
+.box-2 {
     left: -11rem;
     top: -23rem;
     animation: boxAnim 100s -10s infinite linear;
 }
 
-.box3 {
+.box-3 {
     left: 10rem;
     top: -23rem;
     animation: boxAnim 100s -20s infinite linear;
 
 }
 
-.box4 {
+.box-4 {
     left: 25rem;
     top: -6rem;
     animation: boxAnim 100s -30s infinite linear;
 
 }
 
-.box5 {
+.box-5 {
     left: 22rem;
     top: 13rem;
     animation: boxAnim 100s -40s infinite linear;
 }
 
-.box6 {
+.box-6 {
     left: 0;
     top: 25rem;
     animation: boxAnim 100s -50s infinite linear;
 
 }
 
-.box7 {
+.box-7 {
     left: -21rem;
     top: 14rem;
     animation: boxAnim 100s -60s infinite linear;
@@ -137,37 +137,37 @@ html {
 
 
 
-.box1 div {
+.box-1 div {
     /* JS */
     background-color: #efd81d;
 }
 
-.box2 div {
+.box-2 div {
     /* REACT */
     background-color: #61dbfb;
 }
 
-.box3 div {
+.box-3 div {
     /* VUE */
     background-color: #41b883;
 }
 
-.box4 div {
+.box-4 div {
     /* ANGULAR */
     background-color: #b52e31;
 }
 
-.box5 div {
+.box-5 div {
     /* NODE */
     background-color: #43853d;
 }
 
-.box6 div {
+.box-6 div {
     /* SASS */
     background-color: #cf649a;
 }
 
-.box7 div {
+.box-7 div {
     /* EMBER */
     background-color: #e04e39;
 }
