@@ -38,6 +38,7 @@ html {
 .heading span {
     font-size: 4rem;
     color: #efd81d;
+    transition: color .2s;
 }
 
 .btn {
@@ -51,6 +52,8 @@ html {
     letter-spacing: .1rem;
     border: none;
     margin-top: 3.5rem;
+    transition: background-color .3s;
+        cursor: pointer;
 }
 
 .boxes {
@@ -66,8 +69,15 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+        transition: all 0.5s;
 }
 
+.active.box {
+    top: 0;
+    left: 0;
+    transition: all 0.5s;
+}
 @keyframes boxAnim {
     0% {
         transform: rotateX(0) rotateY(0) rotateZ(0);
@@ -124,6 +134,11 @@ html {
 
 }
 
+.active.box div {
+    width: 16rem;
+    height: 16rem;
+    transition: all 0.2s 0.5s ease-in-out;
+}
 .box div {
     width: 7rem;
     height: 7rem;
@@ -195,5 +210,30 @@ html {
 
 .left-side {
     transform: rotateY(90deg) translateX(-3.5rem);
+    transform-origin: left;
+}
+.active .top-side {
+    transform: rotateX(90deg) translateZ(8rem);
+}
+
+.active .bottom-side {
+    transform: rotateX(90deg) translateZ(-8rem);
+}
+
+.active .front-side {
+    transform: translateZ(8rem);
+}
+
+.active .back-side {
+    transform: translateZ(-8rem);
+}
+
+.active .right-side {
+    transform: rotateY(-90deg) translateX(8rem);
+    transform-origin: right;
+}
+
+.active .left-side {
+    transform: rotateY(90deg) translateX(-8rem);
     transform-origin: left;
 }
